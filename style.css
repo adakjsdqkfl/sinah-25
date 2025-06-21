@@ -1,0 +1,174 @@
+/* Corrección en la clase .texto */
+.texto {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  flex: 1 1 400px;
+  color: #4a235a;
+}
+
+/* Estilos generales */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  background-color: #444;
+  border-radius: 4px;
+  display: none;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background-color: #555;
+}
+
+.barra-navegacion {
+  padding: 10px 16px;
+}
+
+.barra-navegacion input[type="text"] {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.temaprincipal {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f5b7b1, #d7bde2);
+  color: #4a235a;
+}
+
+.carrusel {
+  position: relative;
+  max-width: 400px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(74, 35, 90, 0.4);
+  height: auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(74, 35, 90, 0.7);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(74, 35, 90, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.contenido {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.texto h2 {
+  margin-bottom: 15px;
+}
+
+.texto p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.video {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #4a235a;
+  color: white;
+  font-size: 14px;
+  margin-top: 50px;
+}
